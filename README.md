@@ -15,11 +15,11 @@ Setup process in two parts
 ```yum install nfs-utils libnfsidmap```
 
 - Enable and start the NFS Services
-```systemctl enable rpcbind, nfs-server```
+```systemctl enable rpcbind, nfs-server```  
 ```systemctl start rpcbind.service nfs-server.service rpc-statd.service nfs-idmapd.service```
 
 - Create a directory for NFS and give all the permissions
-```mkdire /server/apps```
+```mkdire /server/apps```  
 ```chmod 777 /server/apps```
 
 - modify the ```/etc/exports``` file and add new shared filesystem
